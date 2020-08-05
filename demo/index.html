@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>B-Scroll jQuery/Javascript plugin</title>       
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header" class="header">
+        <ul id="nav-bar">
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+        </ul>        
+    </div>
+
+    <!-- Container -->
+    <div id="container">
+        <div id="section1" class="sections">
+        	<h1>SECTION 1</h1>         
+        </div>
+        <div id="section2" class="sections">
+            <h1>SECTION 2</h1>
+        </div>        
+        <div id="section3" class="sections">
+            <h1>SECTION 3</h1>          
+        </div>
+        <div id="section4" class="sections">
+            <h1>SECTION 4</h1>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="../src/jquery.BScroll.js"></script>    
+    <script>
+		$(document).ready(function() {
+			
+			/*********************  B-Scroll *********************/			
+			$("#nav-bar").BScroll({		
+				scrollDuration: 800,
+				scrollDistance: 0,
+				scrollEasing: "easeOutQuart",	
+				onScrollMovement: function() {				
+					
+				},	
+				
+				navLinkList: ['#section1','#section2','#section3','#section4'],
+				activeLink: '#section1',
+				activeNavLinkClass: ['active'],
+				hashIsOn: false,
+				
+				headerID: 'header',		
+				headerClassName: 'header-scrolled',		
+				
+				animationSpeed: 300,
+				css3Easing: 'ease-out',
+					
+				upButtonIsOn: true,
+				makeButton: true,
+				upButtonID: 'go-upButton',				
+				upButtonText: '<div><span></span></div>',
+				upButtonScrollTo: "#section1",
+				upButtonInlineStyle: {bottom: '25px', right: '25px'},		
+				upButtonStartingStyle: {visibility: 'hidden', right: "-100px"},
+				upButtonEndingStyle: {visibility: 'visible', right: '25px'},
+				upButtonZIndex: 999				
+			});		
+		});
+    </script>     
+</body>
+</html>
