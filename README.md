@@ -23,7 +23,7 @@ $(document).ready(function() {
   });			
 });
 ```
-**Notice:** You need select your nav bar by id to use B-Scroll plugin.
+**Notice:** You need to select your nav bar by id to use B-Scroll plugin.
 
 ### Options
 - `scrollDuration:` (Default: 300) Set duration of scroll movement in milliseconds. If you set it zero, then it acts like normal browser behaviour.
