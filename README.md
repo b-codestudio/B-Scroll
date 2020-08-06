@@ -7,13 +7,11 @@ B-Scroll is jQuery / Javascript plugin which has control over browser scroll eve
 B-Scroll is fully functional plugin with all modern browsers and even with old browsers like IE10 and Opera 12.1.
 
 ### How to use
-After files are downloaded, you need to go to `src` folder and copy **jquery.BScroll.js** file and paste it to your `js` folder. Now open your root file such as `index.html` and paste this line of code to your `<head></head>` section:
+After files are downloaded, you need to go to `src` folder and copy **jquery.BScroll.js** file and paste it to your `js` folder. Now open your root file such as `index.html` and paste this line of code next to your other `<script></script>` codes:
 
 ```
-<head>
-   //Your other script tags
-   <script src="your js folder path/jquery.BScroll.js"></script> 
-</head>
+//Your other script tags
+<script src="your js folder path/jquery.BScroll.js"></script> 
 ```
 ### initialization
 Initilize the plugin like other jQuery plugins, like below:
