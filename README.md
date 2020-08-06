@@ -539,4 +539,4 @@ $("#nav-bar").BScroll({
 **Notice:** This option only works with `upButtonStartingStyle` and `upButtonEndingStyle`.
 
 ### Reporting issues
-f you have any issues or any code improvement, please feel free to share it with me.
+If you have any issues or any code improvement, please feel free to share it with me.
